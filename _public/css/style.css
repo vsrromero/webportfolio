@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f5f3;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px;
+    border-bottom: solid black 1px;
+    border-width: 90%;
+    padding: 10px 0 30px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin: 0 80px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #01696e;
+
+}
+
+nav li a[href="contact.html"] {
+    border: solid #01696e 1px;
+    padding: 15px 25px;
+    border-radius: 15px;
+    transition: 0.25s;
+}
+
+nav li a[href="contact.html"]:hover {
+    border: solid #01696e 1px;
+    background-color: #01696e;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 15px;
+}
+
+nav li a[href="#aboutme"]:hover {
+    border-top: solid 1px #01696e;
+}
+
+main {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+aside img {
+    width: 500px;
+    height: auto;
+}
+
+footer {
+    margin: 0 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#logo {
+    width: 280px;
+    height: auto;
+}
+
+.right {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    flex-direction: column;
+    margin: 0 0 0 100px;
+}
+
+.top {
+    padding: 100px;
+    padding-bottom: 0;
+}
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 -50px;
+    margin: 100px 0;
+}
+
+.middle img[src="/_public/images/linkedin.svg"]{
+    width: 138px;
+    height: auto;
+}
+
+.middle img[src="/_public/images/github.svg"]{
+    width: 86px;
+    height: auto;
+}
+
+.bottom {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 100px;
+}
+.bottom h2 {
+    display: flex;
+    justify-content: center;
+}
+.bottom__skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.bottom img{
+    width: 50px;
+    height: auto;
+}
