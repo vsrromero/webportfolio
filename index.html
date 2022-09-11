@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <img id="logo" src="./public/images/logo.png" alt="logo Victor Romero Software engineer">
         <nav>
             <ul>
@@ -18,30 +18,96 @@
         </nav>
     </header>
     <main>
-        <aside>
-            <img src="./public/images/Victor.png" alt="Victor Romero">
-        </aside>
-        <div class="right">
-            <div class="top">
-                <h1>Hello I'm <br />Victor Romero</h1>
-                I'm a system analyst with a bachelor's degree in Brazil.
-            </div>
-            <div class="middle">
-                <a href="https://www.linkedin.com/in/victor-silvestrin-romero" target="_blank"><img src="./public/images/linkedin.svg" alt="Logo linkedin" /></a>
-                <a href="https://github.com/vsrromero" target="_blank"><img src="./public/images/github.svg" alt="Logo github" /></a>
-            </div>
-            <section class="bottom">
-                <h2>SKILLS</h2>
-                <div class="bottom__skills">
-                    <img src="./public/images/html5-original.svg" alt="logo html5">
-                    <img src="./public/images/css3-original.svg" alt="logo css3">
-                    <img src="./public/images/javascript-original.svg" alt="logo javascript">
-                    <img src="./public/images/php-plain.svg" alt="logo php">
-                    <img src="./public/images/laravel-plain.svg" alt="logo laravel">
-                    <img src="./public/images/github-original.svg" alt="logo github">
+        <div class="content">
+            <aside>
+                <img src="./public/images/Victor.png" alt="Victor Romero">
+            </aside>
+            <div class="content__right">
+                <div class="content__right__top">
+                    <h1>Hello I'm <br />Victor Romero</h1>
+                    I'm a system analyst with a bachelor's degree in Brazil.
                 </div>
-            </section>
+                <div class="content__right__middle">
+                    <a href="https://www.linkedin.com/in/victor-silvestrin-romero"><img src="./public/images/linkedin.svg"/></a>
+                    <a href="https://github.com/vsrromero"><img src="./public/images/github.svg" alt="Logo github" /></a>
+                </div>
+                <section class="content__right__bottom">
+                    <h2>SKILLS</h2>
+                    <div class="bottom__skills">
+                        <img src="./public/images/html5-original.svg" alt="logo html5">
+                        <img src="./public/images/css3-original.svg" alt="logo css3">
+                        <img src="./public/images/javascript-original.svg" alt="logo javascript">
+                        <img src="./public/images/php-plain.svg" alt="logo php">
+                        <img src="./public/images/laravel-plain.svg" alt="logo laravel">
+                        <img src="./public/images/github-original.svg" alt="logo github">
+                    </div>
+                </section>
+            </div>
         </div>
+        <section id="aboutme">
+            <div class="aboutme__left">
+                <h2>Who I am</h2>
+                <p>
+                <h3>My name is Victor Romero, I am a brazilian living in England for 6.5 years.</h3>
+
+                My first BSc was in accounting sciences, but I was already working as business analyst
+
+                so I decided start a new jorney walking through an almost new path, once I always had
+
+                computer at home and already had a MCSA in Windows 2000, so I enrolled in the course
+
+                of system analysis.
+                <br /><br />
+
+
+                After finishing this second university course, I’d love start coding, but I should start from
+
+                begining, and I didn’t want a salary 3 times lower than what I was getting, so I just for
+
+                that time give a break, and I kept in my mind that one day I would back programming
+
+                and now here I am.<br />
+
+                I enrolled one course at Udemy platform to remember how code in php and also started
+
+                a project in Laravel, but when I noticed that this path would be a bit longer that what I
+
+                was expecting, I decided get help from IT career switch and I enrolled a new course
+
+                where I am learnig again HTML, CSS and JavaScript aming the next modules with React
+
+                and Node.js<br />
+
+                Once this is a full stack software engineer course, the next modules will be Python, Java,
+
+                php and C#.<br />
+
+                I hope now get a new begining and the chance of get a job finaly working with something I
+
+                really like, work coding.
+            </p>
+
+            </div>
+            <div class="aboutme__right">
+                <p>
+                    <span class="indent1x comment">//counts amount of doing tasks</span><br />
+                    <br />
+                    <span class="indent1x lang">public function</span> <span class="method">selectDoing</span>(){<br />
+                    <br />
+                    <span class="indent2x command">$</span>results = array();</span><br />
+                    <br />
+                    <span class="indent2x command">$</span>select = <span class="command">$</span>this-><span class="command">dba</span>-><span class="method">prepare</span>("<span class="command">SELECT</span> * <span class="command">FROM</span><br />
+                    <br />
+                    <span class="indent2x command">$</span>select-><span class="method">execute</span>();<br />
+                    <br />
+                    <span class="indent2x command">$</span>results = <span class="command">$</span>select-><span class="method">fetchAll</span>(<span class="command">PDO</span>::<span class="command">FETCH_ASS</span><br />
+                    <br />
+                    <span class="indent2x lang">return</span> count(<span class="command">$</span>results);}  
+                </p>
+            </div>
+            
+        </section>
+        <a href="#header" class="general-link">Back to top</a>
     </main>
     <footer>
         ©Victor Romero

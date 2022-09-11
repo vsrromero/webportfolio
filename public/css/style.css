@@ -5,6 +5,15 @@ html,body{
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth; /* Make the page rolls smooth */
+}
+
+body {
+    /*height: 5000px; /* Make this site really long */
+    overflow: hidden; /* Hide scrollbars */
+}
+
 body {
     background-color: #f4f5f3;
 }
@@ -35,7 +44,6 @@ nav li a {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #01696e;
-
 }
 
 nav li a[href="contact.html"] {
@@ -60,12 +68,20 @@ nav li a[href="#aboutme"]:hover {
 main {
     margin: 0 50px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 aside img {
     width: 500px;
     height: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
@@ -79,7 +95,13 @@ footer {
     height: auto;
 }
 
-.right {
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 850px;
+}
+
+.content__right {
     display: flex;
     font-family: 'Roboto', sans-serif;
     font-size: large;
@@ -87,12 +109,13 @@ footer {
     margin: 0 0 0 100px;
 }
 
-.top {
+.content__right__top {
     padding: 100px;
     padding-bottom: 0;
 }
 
-.middle {
+
+.content__right__middle {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -101,24 +124,24 @@ footer {
     margin: 100px 0;
 }
 
-.middle img[src="/_public/images/linkedin.svg"]{
+.content__right__middle img[src="./public/images/linkedin.svg"]{
     width: 138px;
     height: auto;
 }
 
-.middle img[src="/_public/images/github.svg"]{
+.content__right__middle img[src="./public/images/github.svg"]{
     width: 86px;
     height: auto;
 }
 
-.bottom {
+.content__right__bottom {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 100px;
 }
-.bottom h2 {
+.content__right__bottom h2 {
     display: flex;
     justify-content: center;
 }
@@ -129,7 +152,251 @@ footer {
     padding: 0 10px;
 }
 
-.bottom img{
+.content__right__bottom img{
     width: 50px;
     height: auto;
+}
+
+.aboutme__left{
+    width: 800px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.aboutme__left h2 {
+    font-size: 28pt;
+}
+
+.aboutme__right {
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    width: 388px;
+    height: 388px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.indent1x {
+    margin-left: 40px;
+}
+
+.indent2x {
+    margin-left: 60px;
+}
+
+.comment{
+    color: rgb(86, 184, 86);
+}
+
+.lang {
+    color: #fd4f31;
+}
+
+.command{
+    color: #33a9dc;
+}
+
+.method {
+    color: #e89ee0
+}
+
+.general-link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #01696e;
+}
+
+/* 1024 x 769 */
+
+@media only screen and (max-width: 1115px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        margin: 0 50px;
+        border-bottom: solid black 1px;
+        padding: 10px 0 30px 0;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    nav li {
+        list-style: none;
+        display: inline;
+        margin: 0 20px;
+    }
+
+    main {
+        margin: 0 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    aside img {
+        width: 300px;
+        height: auto;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content__right {
+        display: flex;
+        font-family: 'Roboto', sans-serif;
+        font-size: large;
+        flex-direction: column;
+        margin: 0 0 0 0px;
+    }
+
+    .content__right__middle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        
+    }
+    
+    .content__right__middle img[src="./public/images/linkedin.svg"]{
+        width: 138px;
+        height: auto;
+    }
+    
+    .content__right__middle img[src="./public/images/github.svg"]{
+        width: 86px;
+        height: auto;
+    }
+    
+    .content__right__bottom {
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 100px;
+    }
+    .content__right__bottom h2 {
+        display: flex;
+        justify-content: center;
+    }
+    .bottom__skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    
+    .content__right__bottom img{
+        width: 50px;
+        height: auto;}
+
+    .bottom {
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 100px;
+    }
+    .bottom h2 {
+        display: flex;
+        justify-content: center;
+    }
+    .bottom__skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .bottom img{
+        width: 50px;
+        height: auto;
+    }
+
+    .aboutme__left{
+        width: 800px;
+        font-size: 20px;
+        line-height: 2;
+    }
+
+    .aboutme__left h2 {
+        font-size: 28pt;
+    }
+
+    .aboutme__right {
+        color: #fff;
+        background-color: #000;
+        border-radius: 50%;
+        width: 388px;
+        height: 388px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        body {overflow: scroll;}
+
+        header {
+            width: 100%;
+        }
+
+        header img {
+        display: none;
+        }
+
+        aside img {
+            display: none;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        nav li {
+            list-style: none;
+            display: inline;
+            margin: 0 0px;
+        }
+        
+        nav li a {
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            color: #01696e;
+        }
+        
+        
+
+        #aboutme {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .aboutme__right {
+            display: none;
+        }
+
+        .aboutme__left {
+            text-align: justify;
+            width: 320px;
+        }
+    }
 }
